@@ -1,0 +1,19 @@
+annotation: genes
+customAnnotation: false
+customFeatures:
+- Input/FeatureBeds/DNASEmesc_SRX1452763.05.bed
+- Input/FeatureBeds/DNASEmesc_SRX1452763.05.bed
+datasets:
+- DLBCLPB
+downloadDir: PrecomputedData
+insertionFile:
+- Input/BEDInsertionTesting/DLBCLPB.BED
+multest_correction:
+- bonferroni
+mutagenesis_method:
+- predefinedFeatures
+outputDir: Output
+snakemakeRule: --until defineMutagenesisFeatures --cores 4
+transposonSystem:
+- PB
+usePrecomputedFeatures: 'True'
